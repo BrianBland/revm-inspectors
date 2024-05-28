@@ -509,7 +509,7 @@ where
                 entry.storage.insert(
                     (*key).into(),
                     Delta::changed(
-                        slot.previous_or_original_value.into(),
+                        slot.original_value.into(),
                         slot.present_value.into(),
                     ),
                 );
